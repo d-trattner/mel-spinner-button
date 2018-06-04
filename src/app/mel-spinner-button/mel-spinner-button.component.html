@@ -1,0 +1,4 @@
+<button mat-button >
+  <span *ngIf="!loading">{{text}}</span>
+  <mat-spinner *ngIf="loading" diameter="24" class="btn-spinner" color="accent" (click)="onClick()"></mat-spinner>
+</button>
